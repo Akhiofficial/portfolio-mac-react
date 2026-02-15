@@ -1,4 +1,4 @@
-# Mac OS Portfolio 🍎
+# Mac OS Portfolio
 
 A unique portfolio website inspired by the Mac OS interface, built with React and Vite.
 
@@ -19,6 +19,7 @@ A unique portfolio website inspired by the Mac OS interface, built with React an
 - **Build Tool**: Vite
 - **Deployment**: Vercel ready
 
+
 ## Getting Started 🚀
 
 1. Clone the repository.
@@ -26,4 +27,5 @@ A unique portfolio website inspired by the Mac OS interface, built with React an
 3. Run development server: `npm run dev`
 4. Build for production: `npm run build`
 
-> Vibe coded.
+## special thanks to: 
+Sheriyans Coding School for the opportunity to learn and grow.

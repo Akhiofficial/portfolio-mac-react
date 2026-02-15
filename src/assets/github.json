@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000",
+    "title": "Hotel App",
+    "description": "A comprehensive hotel management application facilitating seamless booking and administrative operations. Vibe coded.",
+    "tags": [
+      "PHP",
+      "SQL",
+      "Vanilla JS",
+      "CSS"
+    ],
+    "repoLink": "https://github.com/Akhiofficial/hotel-app",
+    "demoLink": "https://github.com/Akhiofficial/hotel-app"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000",
+    "title": "Placemate Campus Placement System",
+    "description": "An efficient platform designed to streamline and manage campus placement processes for students and recruiters.",
+    "tags": [
+      "React",
+      "Node.js",
+      "Education Tech",
+      "Web App"
+    ],
+    "repoLink": "https://github.com/Akhiofficial/placemate-campus-placement-system",
+    "demoLink": "https://github.com/Akhiofficial/placemate-campus-placement-system"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&q=80&w=1000",
+    "title": "CareerVarta",
+    "description": "A dynamic career guidance and news platform built on WordPress, offering valuable insights and resources.",
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Content Platform"
+    ],
+    "repoLink": null,
+    "demoLink": "https://careervarta.com/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1523475496153-3d6cc6b5679b?auto=format&fit=crop&q=80&w=1000",
+    "title": "Sabah Siddiqui Portfolio",
+    "description": "A professional portfolio website showcasing achievements, skills, and work experience.",
+    "tags": [
+      "WordPress",
+      "Portfolio",
+      "Design"
+    ],
+    "repoLink": null,
+    "demoLink": "https://sabahsiddiqui.com/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=1000",
+    "title": "Secure House",
+    "description": "Optimized the SEO performance for a security services website to enhance visibility and search rankings.",
+    "tags": [
+      "SEO",
+      "Web Performance",
+      "Optimization"
+    ],
+    "repoLink": null,
+    "demoLink": "https://secure-house.co.uk/"
+  }
+]

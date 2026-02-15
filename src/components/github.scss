@@ -1,0 +1,69 @@
+.cards{
+    overflow: auto;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+    
+    
+
+    .card{
+        flex-grow: 1;
+        flex-basis: 20rem;
+        min-width: 25rem;
+        padding-inline: 1rem;
+        padding-block: 0.75rem;
+        background-color: #212020;
+        border-radius: 0.7rem;
+        
+        
+        
+        
+
+
+        img{
+            width: 100%;
+            border-radius: 0.2rem;
+        }
+
+        h1{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .description{
+            opacity: 0.7;
+            word-spacing: 0.4rem;
+            line-height: 1.3rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+            .tag{
+                background-color: rgb(82, 78, 73);
+                width: fit-content;
+
+                padding-inline: 1.2rem;
+                padding-block: 0.2rem;
+                border-radius: 0.75rem;
+                white-space: nowrap;
+
+            }
+        }
+
+        .links{
+            display: flex;
+            gap: 1rem;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+    

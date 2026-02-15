@@ -1,0 +1,309 @@
+// ================================================================
+// 1. CORE DEPENDENCIES & SKILLS
+// ================================================================
+
+interface TechSkill {
+  name: string;
+  proficiency: number; // 0-100
+}
+
+interface TechStack {
+  frontend: TechSkill[];
+  backend: TechSkill[];
+  tools: string[];
+}
+
+const TECH_STACK: TechStack = {
+  frontend: [
+    { name: "React.js", proficiency: 100 },
+    { name: "Next.js", proficiency: 95 },
+    { name: "TailwindCSS", proficiency: 90 },
+    { name: "Three.js", proficiency: 70 },
+    { name: "TypeScript", proficiency: 95 },
+    { name: "Vue.js", proficiency: 85 },
+  ],
+  backend: [
+    { name: "Node.js", proficiency: 90 },
+    { name: "PostgreSQL", proficiency: 85 },
+    { name: "Redis", proficiency: 75 },
+    { name: "Docker", proficiency: 80 },
+    { name: "MongoDB", proficiency: 88 },
+  ],
+  tools: ["AWS", "Git", "Figma", "Linux", "GitHub Actions", "Webpack"],
+};
+
+// ================================================================
+// 2. EXPERIENCE LOG (Reverse Chronological)
+// ================================================================
+
+interface Experience {
+  title: string;
+  company: string;
+  duration: string;
+  description: string;
+  skills: string[];
+}
+
+class ProfessionalHistory {
+  private experiences: Experience[] = [];
+
+  // *** CURRENT ROLE
+  addCurrentRole(): void {
+    this.experiences.push({
+      title: "Senior Frontend Developer",
+      company: "Tech Innovations Inc.",
+      duration: "Jan 2024 - Present",
+      description:
+        "Leading frontend architecture and development for high-performance web applications. Mentoring junior developers and establishing best practices.",
+      skills: [
+        "React.js",
+        "TypeScript",
+        "Next.js",
+        "Performance Optimization",
+      ],
+    });
+  }
+
+  // *** PREVIOUS ROLES
+  addPreviousRole(experience: Experience): void {
+    this.experiences.push(experience);
+  }
+
+  getExperiences(): Experience[] {
+    return this.experiences;
+  }
+}
+
+// ================================================================
+// 3. EDUCATION & CERTIFICATIONS
+// ================================================================
+
+interface Education {
+  program: string;
+  institution: string;
+  completionYear: number;
+}
+
+interface Certification {
+  name: string;
+  issuer: string;
+  year: number;
+}
+
+const EDUCATION: Education[] = [
+  {
+    program: "Bachelor of Computer Science",
+    institution: "University of Technology",
+    completionYear: 2020,
+  },
+  {
+    program: "Full Stack Development Bootcamp",
+    institution: "Sheriyans Coding School",
+    completionYear: 2021,
+  },
+];
+
+const CERTIFICATIONS: Certification[] = [
+  { name: "React Advanced Patterns", issuer: "Udemy", year: 2023 },
+  { name: "AWS Solutions Architect", issuer: "Amazon", year: 2023 },
+  { name: "TypeScript Professional", issuer: "Scrimba", year: 2022 },
+];
+
+// ================================================================
+// 4. PROJECTS & PORTFOLIO
+// ================================================================
+
+interface Project {
+  name: string;
+  description: string;
+  technologies: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  outcomes: string[];
+}
+
+const FEATURED_PROJECTS: Project[] = [
+  {
+    name: "E-Commerce Platform",
+    description: "Full-stack e-commerce solution with real-time inventory",
+    technologies: ["Next.js", "PostgreSQL", "Stripe", "Redux"],
+    liveUrl: "https://example.com/ecommerce",
+    githubUrl: "https://github.com/username/ecommerce",
+    outcomes: [
+      "40% faster page load times",
+      "Increased conversion by 25%",
+      "Served 100k+ monthly users",
+    ],
+  },
+  {
+    name: "Portfolio Website",
+    description: "Interactive 3D portfolio using Three.js and React",
+    technologies: ["React", "Three.js", "GSAP", "Vite"],
+    liveUrl: "https://myportfolio.com",
+    githubUrl: "https://github.com/username/portfolio",
+    outcomes: [
+      "Unique 3D experience",
+      "Mobile responsive design",
+      "SEO optimized",
+    ],
+  },
+];
+
+// ================================================================
+// 5. SKILLS BREAKDOWN
+// ================================================================
+
+interface SkillCategory {
+  category: string;
+  skills: string[];
+  yearsOfExperience: number;
+}
+
+const SKILL_CATEGORIES: SkillCategory[] = [
+  {
+    category: "Frontend Development",
+    skills: [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "SCSS/SASS",
+    ],
+    yearsOfExperience: 5,
+  },
+  {
+    category: "Backend Development",
+    skills: ["Node.js", "Express.js", "PostgreSQL", "MongoDB", "Redis"],
+    yearsOfExperience: 4,
+  },
+  {
+    category: "DevOps & Tools",
+    skills: ["Docker", "GitHub Actions", "AWS", "Linux", "Git"],
+    yearsOfExperience: 3,
+  },
+  {
+    category: "UI/UX Design",
+    skills: ["Figma", "Adobe XD", "Responsive Design", "Accessibility"],
+    yearsOfExperience: 3,
+  },
+];
+
+// ================================================================
+// 6. ACHIEVEMENTS & METRICS
+// ================================================================
+
+interface Achievement {
+  title: string;
+  metric: string;
+  impact: string;
+}
+
+const ACHIEVEMENTS: Achievement[] = [
+  {
+    title: "Performance Optimization",
+    metric: "Reduced bundle size by 45%",
+    impact: "Improved lighthouse score to 98",
+  },
+  {
+    title: "Code Quality",
+    metric: "Maintained 85%+ test coverage",
+    impact: "Zero critical bugs in production",
+  },
+  {
+    title: "Team Leadership",
+    metric: "Mentored 8+ junior developers",
+    impact: "Team productivity increased by 60%",
+  },
+];
+
+// ================================================================
+// 7. INTERESTS & HOBBIES
+// ================================================================
+
+interface Interest {
+  name: string;
+  description: string;
+}
+
+const INTERESTS: Interest[] = [
+  {
+    name: "Open Source Contribution",
+    description: "Active contributor to popular React libraries",
+  },
+  {
+    name: "Tech Blogging",
+    description: "Writing technical articles on Medium & Dev.to",
+  },
+  {
+    name: "3D Graphics",
+    description: "Exploring WebGL and creative coding",
+  },
+  {
+    name: "UI/UX Design",
+    description: "Designing beautiful and accessible interfaces",
+  },
+];
+
+// ================================================================
+// 8. CONTACT & SOCIAL
+// ================================================================
+
+interface ContactInfo {
+  email: string;
+  phone?: string;
+  location: string;
+  website: string;
+}
+
+interface SocialProfiles {
+  github: string;
+  linkedin: string;
+  twitter?: string;
+  behance?: string;
+}
+
+const CONTACT: ContactInfo = {
+  email: "your.email@example.com",
+  phone: "+1 (XXX) XXX-XXXX",
+  location: "San Francisco, CA",
+  website: "https://yourportfolio.com",
+};
+
+const SOCIAL: SocialProfiles = {
+  github: "https://github.com/yourname",
+  linkedin: "https://linkedin.com/in/yourname",
+  twitter: "https://twitter.com/yourname",
+  behance: "https://behance.net/yourname",
+};
+
+// ================================================================
+// 9. EXPORT FOR USE IN COMPONENTS
+// ================================================================
+
+export {
+  TECH_STACK,
+  ProfessionalHistory,
+  EDUCATION,
+  CERTIFICATIONS,
+  FEATURED_PROJECTS,
+  SKILL_CATEGORIES,
+  ACHIEVEMENTS,
+  INTERESTS,
+  CONTACT,
+  SOCIAL,
+};
+
+export type {
+  TechSkill,
+  TechStack,
+  Experience,
+  Education,
+  Certification,
+  Project,
+  SkillCategory,
+  Achievement,
+  Interest,
+  ContactInfo,
+  SocialProfiles,
+};

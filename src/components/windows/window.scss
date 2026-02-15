@@ -1,0 +1,101 @@
+.window{
+
+    background-color: #000000;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    color: rgb(200, 200, 200);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    
+
+
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 
+                0 0 1px rgba(255, 255, 255, 0.1) inset;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+
+    &:hover {
+        box-shadow: 0 25px 80px rgba(0, 0, 0, 0.7), 
+                    0 0 1px rgba(255, 255, 255, 0.15) inset;
+        transform: translateY(-2px);
+    }
+
+    .nav { 
+        padding-inline: 1rem;
+        padding-block: 0.75rem;
+        gap: 1rem;
+
+        display: flex;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(60, 60, 60, 0.7) 0%, rgba(40, 40, 40, 0.5) 100%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+        .dots{
+            display: flex;
+            gap: 0.6rem;
+            padding: 0;
+
+            .dot{
+                height: 13px;
+                width: 13px;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                transition: all 0.2s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.15);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            .red{
+                cursor: pointer;
+                background: linear-gradient(135deg, #ff3b5c 0%, #ff1a3d 100%);
+            }
+            .yellow{
+                cursor: pointer;
+                background: linear-gradient(135deg, #ffcc00 0%, #ffaa00 100%);
+            }
+            .green{
+                cursor: pointer;
+                background: linear-gradient(135deg, #3df23d 0%, #1ed91e 100%);
+            }
+        }
+
+        .title {
+            flex: 1;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: rgb(180, 180, 180);
+            letter-spacing: 0.3px;
+
+            p {
+                margin: 0;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .main-content {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+                
+    }
+
+     *::-webkit-scrollbar{
+            width: 8px;
+        }
+
+        *::-webkit-scrollbar-thumb{
+            background-color: #3d3c3c;
+            border-radius: 4px;
+        }
+}
+
+       
